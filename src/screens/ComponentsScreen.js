@@ -1,16 +1,24 @@
 import React from 'react'
-import { Text,StyleSheet } from 'react-native'
+import { Text,StyleSheet,View } from 'react-native'
 
 
 const ComponentsScreen = () => {
-
-    return <Text style = {styles.textStyle}> This is the styled text</Text>
+const msg1 = "This is my react Learning space!"
+const msg2 =  <Text> React is not bad to learn !</Text>
+    return (<View style = {styles.container}>
+        <Text style = {styles.textStyle}> {msg1}</Text> 
+        {msg2}
+        </View>)
 }
 
 const styles = StyleSheet.create({
     textStyle : {
         fontSize : 30,
-        color : "purple"
+        color : "purple",
+    },
+    container: {
+        backgroundColor: "lime",
+        padding: 20
     }
 })
 
