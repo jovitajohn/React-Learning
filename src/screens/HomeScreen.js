@@ -5,30 +5,91 @@ const HomeScreen = ({navigation}) => {//parameter is actually props and we can u
   
   return <View>
     <Text style={styles.text}>Twinkling Star</Text>
-    <Button
-    title = "Components Screen"
-    onPress = {()=> {
+    <View style = {styles.container}> 
+      <Button
+        title = "Components Screen"
+        onPress = {()=> {
         console.log("Components Pressed")
         navigation.navigate('Components')
       }
     }
     />
-    <TouchableOpacity onPress = {()=> {
+    </View>
+    <View style = {styles.container}>
+      <TouchableOpacity onPress = {()=> {
       console.log("List screen Pressed")
       navigation.navigate('List')
-    }}>
+       }}>
       <Text style={styles.clickable}> List Screen</Text>
     </TouchableOpacity>
-
-    <Button
-    title = "Image Screen"
-    onPress = {()=> {
+    </View>
+    
+    <View style = {styles.container}>
+      <Button
+        title = "Image Screen"
+        onPress = {()=> {
         console.log("ImageScreen Pressed")
         navigation.navigate('Images')
-      }
-    }
+      }}
+      />
+    </View>
+    
+    <View style = {styles.container}>
+      <Button
+        title = "Counter Screen"
+        onPress = {()=> {
+        console.log("CounterScreen Pressed")
+        navigation.navigate('Counter')
+      }}
     />
     </View>
+    <View style = {styles.container}>
+     <Button
+        title = "RandomColorScreen Screen"
+        onPress = {()=> {
+        console.log("RandomColorScreen Pressed")
+        navigation.navigate('Colors')
+      }}
+      />
+    </View>
+    <View style = {styles.container}>
+     <Button
+        title = "Color Mixer Screen"
+        onPress = {()=> {
+        console.log("ColorMixerScreen Pressed")
+        navigation.navigate('Mixer')
+      }}
+      />
+    </View>
+
+    <View style = {styles.container}>
+     <Button
+        title = "Color Mixer with reducer"
+        onPress = {()=> {
+        console.log("color mixer variation Pressed")
+        navigation.navigate('MixerReducer')
+      }}
+      />
+    </View>
+    <View style = {styles.container}>
+     <Button
+        title = "Counter with reducer"
+        onPress = {()=> {
+        console.log("counter with reducer Pressed")
+        navigation.navigate('CounterReducer')
+      }}
+      />
+    </View>
+    <View style = {styles.container}>
+     <Button
+        title = "Text Input Screen"
+        onPress = {()=> {
+        console.log("TextInputScreen Pressed")
+        navigation.navigate('Text')
+      }}
+      />
+    </View>
+  </View>
 }
 
 const styles = StyleSheet.create({
@@ -45,7 +106,11 @@ const styles = StyleSheet.create({
     color: 'white',
     backgroundColor: 'blue',
     padding:20
-  }
+  },
+  container: {
+    margin:10,
+    backgroundColor: 'antiquewhite',
+},
 })
 
 export default HomeScreen;

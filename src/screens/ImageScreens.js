@@ -7,7 +7,7 @@ return <View>
     <Text style = {styles.heading}>Image Screen</Text>
 
     <ImageItem description ="Sunny Day"
-     image = {require('../../assets/sunny.jpeg')}
+     image = {require('../../assets/sunny.jpg')}
      feeling= "Warm"/>
 
     <ImageItem description ="Rainy Day"
@@ -15,7 +15,7 @@ return <View>
     feeling = "Soaked"/>
 
     <ImageItem description ="Snowy Day"
-    image = {require('../../assets/snowy.jpeg')}
+    image = {require('../../assets/snowy.jpg')}
     feeling = "Freezing"/>
    
     </View>
