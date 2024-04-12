@@ -10,6 +10,7 @@ import ColorMixer from "./src/screens/ColorMixer";
 import ColorMixerVariation from "./src/screens/ColorMixerVariation";
 import CounterWithReducer from "./src/screens/CounterWithReducer";
 import TextInputScreen from "./src/screens/TextInputScreen";
+import LayoutSystem from "./src/screens/LayoutSystem";
 
 const navigator = createStackNavigator(
   {
@@ -23,6 +24,7 @@ const navigator = createStackNavigator(
     MixerReducer: ColorMixerVariation,
     CounterReducer: CounterWithReducer,
     Text:TextInputScreen,
+    Layout:LayoutSystem
   },
   {
     initialRouteName: "Home",

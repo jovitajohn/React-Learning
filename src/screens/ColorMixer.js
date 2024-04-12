@@ -40,7 +40,7 @@ return <View>
     />
 
     <View style={styles.colorContainer}>
-        <View style={{height:150,width: 200, backgroundColor: `rgb(${red},${green},${blue})` }} />
+        <View style={{height:150,width: 200, borderWidth:12, borderColor:'black',backgroundColor: `rgb(${red},${green},${blue})` }} />
     </View>
     
 </View>
@@ -54,11 +54,7 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     colorContainer:{
-        marginLeft:30,
-        marginRight: 30,
-        width: 205,
-        height: 155,
-        backgroundColor: 'black'
+       alignItems:'center'
     }
 })
 

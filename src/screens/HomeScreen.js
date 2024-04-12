@@ -89,6 +89,15 @@ const HomeScreen = ({navigation}) => {//parameter is actually props and we can u
       }}
       />
     </View>
+    <View style = {styles.container}>
+     <Button
+        title = "LayoutSystem Screen"
+        onPress = {()=> {
+        console.log("LayoutSystem Pressed")
+        navigation.navigate('Layout')
+      }}
+      />
+    </View>
   </View>
 }
 

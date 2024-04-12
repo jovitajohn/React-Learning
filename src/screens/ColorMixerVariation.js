@@ -41,8 +41,8 @@ return <View>
     onLess = {()=> dispatcher({colorToChange:'blue',amount : -1 * changeRange})}
     />
 
-    <View style={styles.colorContainer}>
-        <View style={{height:150,width: 200, backgroundColor: `rgb(${red},${green},${blue})` }} />
+    <View style={styles.container}>
+        <View style={{height:150,borderWidth:12, borderColor:'black',width: 200, backgroundColor: `rgb(${red},${green},${blue})` }} />
     </View>
     
 </View>
@@ -55,12 +55,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'purple',
         color: 'white'
     },
-    colorContainer:{
-        marginLeft:30,
-        marginRight: 30,
-        width: 205,
-        height: 155,
-        backgroundColor: 'black'
+    container:{
+        alignItems:'center',
     }
 })
 
